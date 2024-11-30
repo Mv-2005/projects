@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pete's Pizza Delivery</title>
+    <link rel="stylesheet" href="piz.css">
+</head>
+<style>
+    .center{
+        text-align: center;
+        color: black;
+    }
+</style>
+<body background-color="blue">
+    <header>
+        <h1 class="center">Pete's Pizza Delivery</h1>
+        <img src="C:\Users\Mohan\Desktop\pizza activity\pilogo.jpg" alt="Pete's Pizza Logo" width="200" height="150">
+    </header>
+
+    <main>
+        <h2 class="center">Online Order Form</h2>
+
+        <form action="/order" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel" required><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="town-city">Town/City:</label>
+            <input type="text" id="town-city" name="town-city" required><br>
+
+            <label for="postcode">Postcode:</label>
+            <input type="text" id="postcode" name="postcode" required><br>
+
+            <div>
+                <label>Topping:</label>
+                <input type="radio" id="margherita" name="topping" value="margherita">
+                <label for="margherita">Margherita</label>
+                <input type="radio" id="four-seasons" name="topping" value="four-seasons">
+                <label for="four-seasons">Four Seasons</label>
+                <input type="radio" id="meat-feast" name="topping" value="meat-feast">
+                <label for="meat-feast">Meat Feast</label>
+            </div>
+
+            <div>
+                <label>Size:</label>
+                <input type="radio" id="small" name="size" value="small">
+                <label for="small">Small</label>
+                <input type="radio" id="medium" name="size" value="medium">
+                <label for="medium">Medium</label>
+                <input type="radio" id="large" name="size" value="large">
+                <label for="large">Large</label>
+            </div>
+
+            <div>
+                <label>Extras:</label><br>
+                <input type="checkbox" id="mushrooms" name="extras" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label><br>
+                <input type="checkbox" id="green-peppers" name="extras" value="green-peppers">
+                <label for="green-peppers">Green peppers</label><br>
+                <input type="checkbox" id="anchovies" name="extras" value="anchovies">
+                <label for="anchovies">Anchovies</label><br>
+                <input type="checkbox" id="extra-cheese" name="extras" value="extra-cheese">
+                <label for="extra-cheese">Extra cheese</label><br>
+            </div>
+
+            <label for="delivery-time">Preferred delivery time:</label>
+            <input type="time" id="delivery-time" name="delivery-time"><br>
+
+           <label for="delivery-instructions">Delivery instructions:</label><br>
+            <textarea id="delivery-instructions" name="delivery-instructions"></textarea><br>
+
+            <center><button type="submit">Submit Order</button></center>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; Pete's Pizza Delivery</p>
+    </footer>
+</body>
+</html>
